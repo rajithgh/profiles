@@ -6,9 +6,11 @@
 	st = status
 	cm = commit -m 
 	am = commit --amend
+	# https://coderwall.com/p/euwpig/a-better-git-log
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	ch = checkout
-	br = checkout -b
+	br = branch 
+	brb = checkout -b
 	brm = branch -m
 	pu = push origin
 	stl = stash list
