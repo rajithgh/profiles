@@ -1,0 +1,16 @@
+[user]
+	email = rajeegun@hotmail.com
+	name = Rajith Gun Hewage
+[alias]
+	a = add
+	st = status
+	cm = commit -m 
+	am = commit --amend
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	ch = checkout
+	br = checkout -b
+	brm = branch -m
+	pu = push origin
+	stl = stash list
+	sta = stash apply
+	chm = checkout master
