@@ -3,15 +3,18 @@
 	name = Rajith Gun Hewage
 [alias]
 	a = add
+	d = diff
 	st = status
 	cm = commit -m 
 	am = commit --amend
 	# https://coderwall.com/p/euwpig/a-better-git-log
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	ch = checkout
-	br = branch 
+	br = branch
 	brb = checkout -b
 	brm = branch -m
+	brd = branch -d
+	brdd = branch -D
 	pu = push origin
 	stl = stash list
 	sta = stash apply
