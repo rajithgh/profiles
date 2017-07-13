@@ -16,6 +16,17 @@
 	brd = branch -d
 	brdd = branch -D
 	pu = push origin
+	puf = push origin -f
+	# pub = "push origin $(line=`git branch | grep \*` ; IFS=' ' read -ra vars <<< '$line'; for i in '${vars[@]}'; do br=$i; done; echo $br)"
+	fea = fetch --all
 	stl = stash list
 	sta = stash apply
+	sts = stash save
 	chm = checkout master
+[color "diff"]
+	new = yellow
+	meta = white
+[color "status"]
+	added = yellow
+[core]
+	editor = vim
