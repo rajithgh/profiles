@@ -6,7 +6,7 @@
 	d = diff
 	st = status
 	cm = commit -m 
-	am = commit --amend
+	amd = commit --amend
 	# https://coderwall.com/p/euwpig/a-better-git-log
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	ch = checkout
@@ -17,7 +17,7 @@
 	brdd = branch -D
 	pu = push origin
 	puf = push origin -f
-	# pub = "push origin $(line=`git branch | grep \*` ; IFS=' ' read -ra vars <<< '$line'; for i in '${vars[@]}'; do br=$i; done; echo $br)"
+	# pub = "push origin $(line=`git branch | grep \\*`; IFS=' ' read -ra vars <<< $line; for i in ${vars[@]}; do br=$i; done; echo $br)"
 	fea = fetch --all
 	stl = stash list
 	sta = stash apply
