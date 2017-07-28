@@ -25,6 +25,7 @@
 	std = stash drop
 	chm = checkout master
 	chp = cherry-pick
+	chm = checkout master
 [color "diff"]
 	new = yellow
 	meta = white
