@@ -10,13 +10,13 @@
 	# https://coderwall.com/p/euwpig/a-better-git-log
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	ch = checkout
-	br = branch
+	br = branch --sort=committerdate 
 	brb = checkout -b
 	brm = branch -m
 	brd = branch -d
 	brdd = branch -D
-	pu = push origin
-	puf = push origin -f
+	puo = push origin
+	puof = push origin -f
 	# pub = "push origin $(line=`git branch | grep \\*`; IFS=' ' read -ra vars <<< $line; for i in ${vars[@]}; do br=$i; done; echo $br)"
 	fea = fetch --all
 	stl = stash list
@@ -25,6 +25,8 @@
 	std = stash drop
 	chm = checkout master
 	chp = cherry-pick
+	chm = checkout master
+	rbm = rebase master
 [color "diff"]
 	new = yellow
 	meta = white
@@ -32,4 +34,5 @@
 	added = yellow
 [core]
 	editor = vim
-	
+[push]
+	default = current
